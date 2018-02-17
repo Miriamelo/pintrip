@@ -1,0 +1,153 @@
+#map {
+    height: 80%;
+    top: 10%
+}
+      
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+#floating-panel {
+    position: absolute;
+    left: 50%;
+    margin-left: -180px;
+    width: 350px;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    opacity: 0.0
+}
+#latlng{
+    width: 225px;
+}
+
+#bottomBar{
+    background-color: white;
+    width: 100vw;
+    height: 10%;
+    position: absolute;
+    z-index: 200;
+    bottom: 0px;
+}
+
+.barImg{
+    z-index: 300;
+    width: 19%;
+    height: 100%;
+    position: relative;
+}
+
+#chosenBarImg{
+    color: pink;
+    background-color: antiquewhite;
+}
+#topBar{
+    background-color: #4bc6e2;
+    width: 100vw;
+    height: 10%;
+    position: absolute;
+    z-index: 200;
+    top: 0px;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../Font/Montserrat.otf);
+}
+
+#topText{
+    width: 100vw;
+    z-index: 205;
+    position: absolute;
+    color: white;
+    font-size: 8vw;
+    text-align: center;
+    font-family: Montserrat;
+    align-content: center;
+    margin-top: 3%;
+}
+
+#loadImg{
+    background-color: #ff3366;
+    z-index: 300;
+    bottom: 15%;
+    left: 25%;
+    position: absolute;
+    width: 50%;
+    height: 5%;
+    padding: 10px;
+}
+
+#openInfo{
+    background-color: white;
+    width: 80vw;
+    height: 40vh;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#openInfoImg{
+    background-color: white;
+    width: 80vw;
+    height: 30vh;
+    position: absolute;
+    z-index: 300;
+    top: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.openInfoText{
+    z-index: 310;
+    position: absolute;
+}
+
+#titleText{
+    top: 73%;
+    left: 5%;
+    font-family: Montserrat;
+    font-size: 6vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#bodyText{
+    top: 83%;
+    left: 5%;
+    font-family: Montserrat;
+    font-size: 4vw;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#closeX{
+    top: 0%;
+    right: 5%;
+    font-family: Montserrat;
+    font-size: 7vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white
+}
