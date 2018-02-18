@@ -1,0 +1,32 @@
+CREATE TABLE Photo (
+  photo_id int (11) NOT NULL AUTO_INCREMENT,
+  user_id int NOT NULL,
+  rating_id int (11) NOT NULL,
+  photo VARCHAR(255) NOT NULL,
+  coordinates int (100) NOT NULL,
+  place_name VARCHAR(255) NOT NULL,
+  date datetime NOT NULL,
+  PRIMARY KEY (photo_id),
+  FOREIGN KEY (user_id),
+  FOREIGN KEY (rating_id)
+);
+
+CREATE TABLE trip_ratings (
+  rating_id int (11) NOT NULL AUTO_INCREMENT,
+  price_level VARCHAR (4) NOT NULL,
+  overall_rating integer(11) NOT NULL,
+  web_url VARCHAR (255) NOT NULL,
+  PRIMARY KEY (rating_id),
+);
+
+CREATE TABLE bucket_list (
+  bucket_id int (11) NOT NULL AUTO_INCREMENT,
+  user_id VARCHAR (4) NOT NULL,
+  photo_id VARCHAR (4) NOT NULL,
+  PRIMARY KEY (buckt_id),
+  FOREIGN KEY (user_id),
+  FOREIGN KEY (photo_id),
+);
+
+
+
