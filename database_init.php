@@ -14,3 +14,4 @@ console.log("Connected successfully");
 
 mysqli_select_db($conn, "$db_name");
 
+?>
