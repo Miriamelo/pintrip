@@ -82,7 +82,7 @@ function findPos(){
       }
 
 
-function sendData(){
+function saveImage(){
             console.log('hello');
             fd.append("coordinates", document.getElementById("latlng").value);
          
