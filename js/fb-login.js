@@ -33,6 +33,16 @@ function checkLoginState() {
   });
 }
 
+//access token response
+FB.getLoginStatus(function(response) {
+  if (response.status === 'connected') {            console.log(response.authResponse.accessToken);
+  }
+});
+
+FB.api('/me', function(response) {
+    console.log(JSON.stringify(response));
+});
+
 function testAPI() {
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
@@ -41,5 +51,3 @@ function testAPI() {
         'Thanks for logging in, ' + response.name + '!';
     });
 }
-
-testAPI();
