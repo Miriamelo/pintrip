@@ -7,7 +7,7 @@
     // Full docs on the response object can be found in the documentation
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
-      window.location = "index.html";
+//      window.location = "index.html";
       testAPI();
     } else {
       // The person is not logged into your app or we are unable to tell.
