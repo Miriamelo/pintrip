@@ -34,13 +34,13 @@
         
         <div class="row login-div">
             <div class="col-sm-12 text-center">
-                <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="false"></div>
+<!--                <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="false"></div>-->
+                     
+    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+    </fb:login-button>
             </div>
         </div>
     </div>  
-      
-    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-    </fb:login-button>
       
     <!-- Optional JavaScript -->
     <script src="js/fb-login.js"></script>  
