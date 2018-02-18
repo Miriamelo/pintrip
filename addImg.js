@@ -7,14 +7,12 @@ function initCoords() {
       }
 }
 
-var location ={};
-
 function initMap(position) {
 //find current position
         var xlat = position.coords.latitude;
         var xlng = position.coords.longitude;
         var location = {lat: xlat, lng: xlng};
-        console.log(location);
+    console.log(location);
     
 //zoom on your location
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -87,6 +85,7 @@ function findPos(){
 function saveImage(){
             var fd = new FormData();
             fd.append("coordinates", document.getElementById("latlng").value);
+            console.log(document.getElementById('latlng').value);
                 fetch("database_init.php",{
                     credentials: 'same-origin',
                     method:"POST",
