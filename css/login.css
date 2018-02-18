@@ -1,0 +1,23 @@
+#background {
+    width: 414px;
+    height: 736px;
+    background-image: url(../assets/gradient-bg-01.svg);
+    position: absolute;
+}
+
+.logo-div {
+    margin: 100px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;   
+}
+
+.login-div {
+    position: absolute;
+    bottom: 200px;
+    margin: 0 auto;
+    right: 0px;
+    left: 0px;
+}
