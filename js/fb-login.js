@@ -41,3 +41,5 @@ function testAPI() {
         'Thanks for logging in, ' + response.name + '!';
     });
 }
+
+testAPI();
