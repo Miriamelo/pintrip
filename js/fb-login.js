@@ -1,14 +1,18 @@
-window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '399196777217210',
-      cookie     : true,
-      xfbml      : true,
-      version    : 'v2.12'
-    });
+function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    if (response.status === 'connected') {
+      testAPI();
 
-    FB.AppEvents.logPageView();   
+    } else if (response.status === 'not_authorized') {
+      FB.login(function(response) {
+        statusChangeCallback2(response);
+      }, {scope: 'public_profile,email'});
 
-};
+    } else {
+      alert("not connected, not logged into facebook, we don't know");
+    }
+  }
 
 (function(d, s, id){
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -51,3 +55,15 @@ function testAPI() {
         'Thanks for logging in, ' + response.name + '!';
     });
 }
+
+window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '399196777217210',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.12'
+    });
+
+    FB.AppEvents.logPageView();   
+
+};
