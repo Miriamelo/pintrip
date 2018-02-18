@@ -151,3 +151,11 @@ html, body {
     margin-bottom: 0;
     color: white
 }
+
+#saveAll{
+    z-index: 300;
+    width: 100%;
+    height: 6%;
+    position: relative;
+    bottom: 33px;
+}

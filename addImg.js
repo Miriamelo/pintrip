@@ -12,6 +12,8 @@ function initMap(position) {
         var xlat = position.coords.latitude;
         var xlng = position.coords.longitude;
         var location = {lat: xlat, lng: xlng};
+    console.log(location);
+    
 //zoom on your location
         var map = new google.maps.Map(document.getElementById('map'), {
               zoom: 10,
@@ -19,6 +21,7 @@ function initMap(position) {
         });
         var geocoder = new google.maps.Geocoder;
         var infowindow = new google.maps.InfoWindow;
+        infowindow.id = 'infowindow';
     
 //make new marker
         var marker = new google.maps.Marker({
@@ -40,15 +43,11 @@ function findPos(){
 
     function success(pos) {
             var crd = pos.coords;
-                  console.log('Your current position is:');
-                  console.log(`Latitude : ${crd.latitude}`);
-                  console.log(`Longitude: ${crd.longitude}`);
-                  console.log(`More or less ${crd.accuracy} meters.`);
             document.getElementById('latlng').value = crd.latitude + "," + crd.longitude;
     };
 
     function error(err) {
-                console.warn(`ERROR(${err.code}): ${err.message}`);
+                console.warn('ERROR(${err.code}): ${err.message}');
     };
             
             var pos = navigator.geolocation.getCurrentPosition(success, error, options);
@@ -81,3 +80,14 @@ function findPos(){
           }
         });
       }
+
+
+function sendData(){
+            fd.append("coordinates", document.getElementById("latlng").value);
+         
+                fetch("database_init.php",{
+                    credentials: 'same-origin',
+                    method:"POST",
+                    body:fd
+                })
+}
