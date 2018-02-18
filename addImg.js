@@ -83,6 +83,7 @@ function findPos(){
 
 
 function sendData(){
+            console.log('hello');
             fd.append("coordinates", document.getElementById("latlng").value);
          
                 fetch("database_init.php",{
