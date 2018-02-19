@@ -71,8 +71,10 @@ function findPos(){
                     });
 //show common name for your location
 //WE NEED TO SEND formatted_address TO THE DATABASE
-              infowindow.setContent(results[0].formatted_address);
+var address = infowindow.setContent(results[0].formatted_address);
               infowindow.open(map, marker);
+        document.getElementById('infowindow').innerHTML=address;
+                    
             } else {
               window.alert('No results found');
             }
@@ -85,6 +87,10 @@ function findPos(){
 function saveImage(){
     var coordinates = document.getElementById("latlng").value;
         console.log(coordinates);
+    
+    var place_name = document.getElementById("infowindow").value;
+        console.log(infowindow);
+    
     var data = "coordinates=" + coordinates;
     var xhr;
     if (window.XMLHttpRequest) { // Mozilla, Safari, ...
@@ -96,7 +102,7 @@ function saveImage(){
      xhr.open("POST", "addImg_db.php", true); 
      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");                  
      xhr.send(data);
-    
+
 	 xhr.onreadystatechange = display_data;
     
 	function display_data() {
