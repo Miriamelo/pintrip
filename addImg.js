@@ -6,10 +6,10 @@ function initCoords() {
         showError("Your browser does not support Geolocation!");
       }
 }
-var coords = '';
 
 function initMap(position) {
 //find current position
+        var coords = '';
         var xlat = position.coords.latitude;
         var xlng = position.coords.longitude;
         var location = {lat: xlat, lng: xlng};
