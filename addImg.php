@@ -20,7 +20,8 @@ include_once "database_init.php";
       <input id="latlng" type="text" value="63.714224,-73.961452" name='coordinates'>
       <!--<input id="submit" type="button" value="Save Location">-->
     </div>
-       
+      
+      
 <!-- map background -->      
     <div id="map"></div>
     
@@ -34,7 +35,7 @@ include_once "database_init.php";
       </div>
       
     <form id="imgForm" method="post">
-        <input id='photo' type="file" accept="image/*" capture="camera" name='photo'/>
+        <input id='loadImg' type="file" accept="image/*" capture="camera" name='photo'/>
 
         <button  
             onclick="saveImage();" 
