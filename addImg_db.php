@@ -1,4 +1,6 @@
 <?php
+        include_once "database_init.php";
+
         $sql = "SELECT * FROM Photo";
         
         $photo = $_POST['photo'];
