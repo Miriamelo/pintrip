@@ -74,7 +74,7 @@ function findPos(){
 var address = infowindow.setContent(results[0].formatted_address);
               infowindow.open(map, marker);
         document.getElementById('infowindow').innerHTML=address;
-                    
+              console.log(address);      
             } else {
               window.alert('No results found');
             }
