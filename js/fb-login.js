@@ -70,7 +70,7 @@
 //        console.log(JSON.stringify(response));
 //    });      
       
-    FB.api('/me','GET', {fields: 'name,email,id'} function(response) {
+    FB.api('/me','GET', {fields: 'name,email,id'}, function(response) {
         var loginData = "name="+response.name+"&email="+response.email+"&fb_Id="+response.id;
         
         console.log('Successful login for: ' + response.name); 
