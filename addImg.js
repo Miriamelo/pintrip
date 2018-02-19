@@ -9,6 +9,7 @@ function initCoords() {
 
 function initMap(position) {
 //find current position
+        var coords = '';
         var xlat = position.coords.latitude;
         var xlng = position.coords.longitude;
         var location = {lat: xlat, lng: xlng};
@@ -81,16 +82,19 @@ function findPos(){
         });
       }
 
-
 function saveImage(){
             var fd = new FormData();
-    
+            console.log('clicked');
             fd.append("coordinates", document.getElementById("latlng").value);
+            
             console.log(document.getElementById('latlng').value);
+    
+            console.log('appended');
     
                 fetch("addImg_db.php",{
                     credentials: 'same-origin',
                     method:"POST",
                     body:fd
                 })
+            console.log('through');
 }

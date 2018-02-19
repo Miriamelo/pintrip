@@ -1,6 +1,6 @@
-<!--<?php
-require_once('addImg_db.php');
-?>-->
+<?php
+include_once "database_init.php";
+?>
 
 <!DOCTYPE html>
 <html>
@@ -17,7 +17,7 @@ require_once('addImg_db.php');
       </div>
       
     <div id="floating-panel">
-      <input id="latlng" type="text" value="63.714224,-73.961452">
+      <input id="latlng" type="text" value="63.714224,-73.961452" name='coordinates'>
       <!--<input id="submit" type="button" value="Save Location">-->
     </div>
       
@@ -34,9 +34,16 @@ require_once('addImg_db.php');
           <img src="assets/user-icon.svg" class='barImg'/>
       </div>
       
-    <input id='loadImg' type="file" accept="image/*" capture="camera"/>
-    
-    <button onclick="uploadImg();">Upload Image</button>
+    <!--<form id="imgForm" method="post" action="#">-->
+        <input id='loadImg' type="file" accept="image/*" capture="camera" name='photo'/>
+
+        <button  
+            onclick="saveImage();"
+            id='saveAll'
+            method='post'
+            >Save Image
+        </button>
+    <!--</form>-->
     
     <!--<img src="../assets/camera-icon.svg" class='barImg' type="file" accept="image/*" capture="camera"/>-->
       
