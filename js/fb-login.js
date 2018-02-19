@@ -7,7 +7,7 @@
     // Full docs on the response object can be found in the documentation
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
-//      window.location = "home.html";
+      window.location = "home.html";
       testAPI();
     } else {
       // The person is not logged into your app or we are unable to tell.
@@ -83,6 +83,6 @@
       }
       xmlhttp.send(loginData);
     
-    document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name +"<br> Email : "+ response.email +"<br> Profile Id :  "+ response.id + "Picture URL: "+response.picture.data.url+'!';    
+//    document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name +"<br> Email : "+ response.email +"<br> Profile Id :  "+ response.id + "Picture URL: "+response.picture.data.url+'!';    
     });
   }
