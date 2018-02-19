@@ -1,4 +1,6 @@
 <?php
+
+echo 'hello';
         include_once "database_init.php";
 
         $sql = "SELECT * FROM Photos";
