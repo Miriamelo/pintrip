@@ -100,17 +100,17 @@ function saveImage(){
     
 	 xhr.onreadystatechange = display_data;
     
-	/*function display_data() {
+	function display_data() {
 	 if (xhr.readyState == 4) {
       if (xhr.status == 200) {
-       document.getElementById("username_display").innerHTML = xhr.responseText;
+       document.getElementById("coordinates_display").innerHTML = xhr.responseText;
           
           console.log("Done!");
       } else {
         alert('There was a problem with the request.');
       }
      }
-	}*/
+	}
 }
 
 

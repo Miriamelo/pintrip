@@ -43,6 +43,7 @@ include_once "database_init.php";
             method='post'
             >Save Image
         </button>
+      <div id='coordinates_display'></div>
     <!--</form>-->
     
     <!--<img src="../assets/camera-icon.svg" class='barImg' type="file" accept="image/*" capture="camera"/>-->
