@@ -3,7 +3,7 @@
 header("Access-Control-Allow-Origin: *");
     $servername = "localhost";
     $dblogin = "root";
-    $password = "root";
+    $password = "";
     $dbname = "pintrip_db";
     
     try {
