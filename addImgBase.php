@@ -11,7 +11,7 @@ include_once "database_init.php";
     <link rel="stylesheet" type="text/css" href="addImg.css">
     <script type='text/javascript' src='addImg.js'></script> 
   </head>
-  <body onload="initCoords(); findPos();">
+  <body onload="initCoords(); initMap(position); findPos();">
       <div id='topBar'>
           <h1 id='topText'>ADD NEW PLACE</h1>
       </div>
@@ -43,6 +43,7 @@ include_once "database_init.php";
             method='post'
             >Save Image
         </button>
+      <div id='showcoords'></div>
       <div id='coordinates_display'></div>
     <!--</form>-->
     
