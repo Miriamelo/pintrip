@@ -1,5 +1,5 @@
 <?php
-	include 'database_init.php';
+	include_once 'database_init.php';
 	//return $conn variable.
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
