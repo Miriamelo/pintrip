@@ -17,7 +17,7 @@ include_once "database_init.php";
       </div>
       
     <div id="floating-panel">
-      <input id="latlng" type="text" value="63.714224,-73.961452" name='email'>
+      <input id="latlng" type="text" name='coordinates'>
       <!--<input id="submit" type="button" value="Save Location">-->
     </div>
       
