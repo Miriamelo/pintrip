@@ -89,7 +89,7 @@ function saveImage(){
         console.log(coordinates);
     
     var place_name = document.getElementById("infowindow").value;
-        console.log(infowindow);
+        console.log(infowindow.value);
     
     var data = "coordinates=" + coordinates;
     var xhr;
