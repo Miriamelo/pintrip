@@ -70,5 +70,17 @@
         console.log('Successful login for: ' + response.name); 
         console.log(JSON.stringify(response));
         console.log(loginData);
+        
+    //ajax request to server
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.open("POST", "logindata.php", true);
+      xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xmlhttp.onreadystatechange = function(){
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+          document.getElementById('response').innerHTML = xmlhttp.responseText;
+        };
+      }
+      xmlhttp.send(loginData);
+        
     });
   }
