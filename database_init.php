@@ -1,5 +1,8 @@
 <?php
 //provide your hostname, username and dbname
+
+echo 'show this';
+
 $host="localhost"; 
 $username="ec2-user";  
 $password="";

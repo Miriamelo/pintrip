@@ -1,6 +1,5 @@
 <?php
 include_once "database_init.php";
-echo 'show this';
 ?>
 
 <!DOCTYPE html>
