@@ -27,6 +27,7 @@
         </div>
         
         <div id="status"></div>
+        <div id="response"></div>
         
         <div class="row login-div">
             <div class="col-sm-12 text-center">
