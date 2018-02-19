@@ -7,8 +7,9 @@
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$fb_Id = $_POST['fb_Id'];
+        $picture = $_POST['picture'];
     
-        $sql = "INSERT INTO Users (oauth_uid, first_name, email) VALUES ('$fb_Id', '$name', '$email')";    
+        $sql = "INSERT INTO Users (oauth_uid, first_name, email, picture) VALUES ('$fb_Id', '$name', '$email', '$picture')";    
     
 		$result = mysqli_query($conn , $sql);
     
