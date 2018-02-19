@@ -83,9 +83,42 @@ function findPos(){
       }
 
 function saveImage(){
+    var coordinates = document.getElementById("latlng").value;
+        console.log(coordinates);
+    var data = "coordinates=" + coordinates;
+    var xhr;
+    if (window.XMLHttpRequest) { // Mozilla, Safari, ...
+        xhr = new XMLHttpRequest();
+    } else if (window.ActiveXObject) { // IE 8 and older
+        xhr = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    
+    
+     xhr.open("POST", "addImg_db.php", true); 
+     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");                  
+     xhr.send(data);
+    
+	 xhr.onreadystatechange = display_data;
+    
+	/*function display_data() {
+	 if (xhr.readyState == 4) {
+      if (xhr.status == 200) {
+       document.getElementById("username_display").innerHTML = xhr.responseText;
+          
+          console.log("Done!");
+      } else {
+        alert('There was a problem with the request.');
+      }
+     }
+	}*/
+}
+
+
+/*
+function saveImage(){
             var fd = new FormData();
             console.log('clicked');
-            fd.append("coordinates", document.getElementById("latlng").value);
+            fd.append("email", document.getElementById("latlng").value);
             
             console.log(document.getElementById('latlng').value);
     
@@ -96,5 +129,5 @@ function saveImage(){
                     method:"POST",
                     body:fd
                 })
-            
-}
+            console.log('through');
+}*/
