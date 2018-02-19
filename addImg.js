@@ -15,7 +15,7 @@ function initMap(position) {
         var location = {lat: xlat, lng: xlng};
     console.log(location);
     
-        var thisPos= document.getElementById("latlng").value = location;
+        var thisPos= document.getElementById("latlng").innerHTML = location;
 //zoom on your location
         var map = new google.maps.Map(document.getElementById('map'), {
               zoom: 10,
@@ -84,7 +84,7 @@ function findPos(){
       }
 
 function saveImage(){
-    var coordinates = document.getElementById("latlng").value;
+    var coordinates = document.getElementById("latlng").innerHTML;
         console.log(coordinates);
     
     var data = "coordinates=" + coordinates;
