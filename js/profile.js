@@ -61,6 +61,5 @@ function showData(){
     
     document.getElementById('myName').innerHTML = response.name;
     document.getElementById('profilePic').src = response.picture.data.url;
-    document.getElementById('myEmail').src = response.email;
     });
 }

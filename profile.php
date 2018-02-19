@@ -26,7 +26,6 @@
             <div class="col-sm-4 text-center name-div">
                 <img id="profilePic" alt="profile pic"/>
                 <p>Name: <span id="myName"></span></p>
-                <p>Email: <span id="myEmail"></span></p>
             </div>
             <div class="col-sm-8"></div>
         </div>
