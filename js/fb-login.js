@@ -66,7 +66,7 @@
     console.log('Welcome!  Fetching your information.... ');    
       
     FB.api('/me','GET', {fields: 'name,email,id'}, function(response) {
-        var loginData = "name="+response.name+"&email="+response.email+"&fb_Id="+response.id;
+        var loginData = "name="+response.name+"&email="+response.email+"&fb_Id="+response.id+"&picture="+response.picture.data.url;
         
         console.log('Successful login for: ' + response.name); 
         console.log(JSON.stringify(response));
@@ -83,6 +83,6 @@
       }
       xmlhttp.send(loginData);
     
-    document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name +"<br> Email : "+ response.email +"<br> Profile Id :  "+ response.id + '!';    
+    document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name +"<br> Email : "+ response.email +"<br> Profile Id :  "+ response.id + "Picture URL: "+response.picture.data.url+'!';    
     });
   }
