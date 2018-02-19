@@ -1,43 +1,49 @@
-<!DOCTYPE html>
-<html>
+<?php
+    require_once 'login.php';
+?>
+
+<!doctype html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Pintrip</title>
-    <link rel="stylesheet" type="text/css" href="addImg.css">
-    <script type='text/javascript' src='addImg.js'></script> 
-    <script type='text/javascript' src='home.js'></script> 
-  </head>
-  <body onload="initCoords(); findPos();">
-      <div id='topBar'>
-          <h1 id='topText'>PINTRIP</h1>
-      </div>
-      
-    <div id="floating-panel">
-      <input id="latlng" type="text" value="63.714224,-73.961452">
-      <!--<input id="submit" type="button" value="Save Location">-->
-    </div>
-      
-    <div id='openInfo'>
-      <h2 class="openInfoText" id='closeX'>X</h2>
-      <img src="assets/holiday.jpg" id='openInfoImg'/>
-      <h2 class='openInfoText' id='titleText'>This is the Place</h2>
-      <p class='openInfoText' id='bodyText'>This is the location</p>
-    </div>
-      
-<!-- map background -->      
-    <div id="map"></div>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
-<!--bottom bar-->
-      <div id='bottomBar'>
-          <img src="assets/home-icon-blue.svg" class='barImg'/>  
-          <img src="assets/bucketlist-icon.svg" class='barImg'/>
-          <img src="assets/add-icon.svg" class='barImg' id='submit'/>
-          <a href="explore.html"><img src="assets/explore-icon.svg" class='barImg'/></a> 
-          <img src="assets/user-icon.svg" class='barImg'/>
-      </div>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkFlD1s3Mkc6gTU6ER65juJEiHUWgsDkw&callback=initMap">
-    </script>
+    <link rel="stylesheet" href="css/login.css">
+
+    <title>PinTrip</title>
+  </head>
+  <body>
+    <div id="fb-root"></div> 
+    <div id="background">
+        <div class="row">
+            <div class="col-sm-4 text-center logo-div">
+                    <img src="assets/PinTrip_Logo_White.svg" alt="Pin Trip Logo" class="logo img-responsive"/>
+            </div>
+            <div class="col-sm-8"></div>
+        </div>
+        
+        <div id="status"></div>
+        
+        <div class="row login-div">
+            <div class="col-sm-12 text-center">
+                <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"
+                scope="public_profile,email" onlogin="checkLoginState();"     
+                >
+                </div>
+            </div>
+        </div>
+    </div>  
+      
+    <!-- Optional JavaScript -->
+    <script src="js/fb-login.js"></script>  
+      
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
