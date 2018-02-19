@@ -1,7 +1,22 @@
 <?php
-//provide your hostname, username and dbname
 
-echo 'show this';
+header("Access-Control-Allow-Origin: *");
+    $servername = "localhost";
+    $dblogin = "ec2-user";
+    $password = "";
+    $dbname = "pintrip_db";
+    
+    try {
+        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
+
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    } catch(PDOException $e) {
+        $error = $e->getMessage();
+        echo "<p style='color: red;'>$error</p>";
+    }
+/*
+//provide your hostname, username and dbname
 
 $host="localhost"; 
 $username="ec2-user";  
@@ -16,5 +31,5 @@ if ($conn->connect_error) {
 console.log("Connected successfully");
 
 mysqli_select_db($conn, "$db_name");
-
+*/
 ?>
