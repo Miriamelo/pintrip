@@ -17,7 +17,7 @@
 
 <?php
     header("Access-Control-Allow-Origin: *");
-    $servername = "http://54.186.123.71";
+    $servername = "localhost";
     $dblogin = "ec2-user";
     $password = "";
     $dbname = "pintrip_db";
