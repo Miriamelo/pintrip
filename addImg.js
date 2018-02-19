@@ -82,9 +82,14 @@ function findPos(){
         });
       }
 
-function saveImage(){
+function saveImage(position){
+        var xlat = position.coords.latitude;
+        var xlng = position.coords.longitude;
+        var location = {lat: xlat, lng: xlng};
+    console.log(location);
+    
     var coordinates = document.getElementById("latlng").innerHTML;
-        console.log(coordinates);
+        console.log(location);
     
     var data = "coordinates=" + coordinates;
     var xhr;
