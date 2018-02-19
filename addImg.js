@@ -6,6 +6,7 @@ function initCoords() {
         showError("Your browser does not support Geolocation!");
       }
 }
+var coords = '';
 
 function initMap(position) {
 //find current position
@@ -80,7 +81,6 @@ function findPos(){
           }
         });
       }
-
 
 function saveImage(){
             var fd = new FormData();
