@@ -1,5 +1,5 @@
 <?php
-        echo 'hello';
+        echo php_info();
 
         include_once "database_init.php";
 
