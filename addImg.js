@@ -91,7 +91,13 @@ function saveImage(){
     var place_name = document.getElementById("infowindow").value;
         console.log(place_name);
     
+    var loadImg = document.getElementById('photo').value;
+        console.log(photo);
+    
     var data = "coordinates=" + coordinates;
+    var data2 = "place_name=" + place_name;
+    var data3 = "photo=" + photo;
+    
     var xhr;
     if (window.XMLHttpRequest) { // Mozilla, Safari, ...
         xhr = new XMLHttpRequest();
@@ -102,6 +108,8 @@ function saveImage(){
      xhr.open("POST", "addImg_db.php", true); 
      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");                  
      xhr.send(data);
+     xhr.send(data2);
+     xhr.send(data3);
 
 	 xhr.onreadystatechange = display_data;
     
