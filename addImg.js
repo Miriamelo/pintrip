@@ -96,4 +96,5 @@ function saveImage(){
                     method:"POST",
                     body:fd
                 })
+            console.log('through');
 }
