@@ -28,7 +28,6 @@
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         $sql = "SELECT * FROM Photo";
-        echo 'hello';
         
         $photo = $_POST['photo'];
         $coordinates = $_POST['coordinates'];
