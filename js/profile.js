@@ -7,6 +7,7 @@ function statusChangeCallback(response) {
         });
     } else {
         FB.api('/me', function(response) {
+            window.location = "index.html";
             document.getElementById("myName").innerHTML = "You are not logged in!";
         });
     }
