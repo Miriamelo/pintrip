@@ -4,3 +4,7 @@
 .login-div {
     margin: 30px;
 }
+
+#profilePic {
+    border-radius: 50%;
+}
