@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Star Catcher</title>
+        
+        <link rel="stylesheet" type="text/css" href="main.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,800" rel="stylesheet">
+        
+        <!-- Bootstrap links -->
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        
+       
+    </head>
+
+    <body>
+        
+        <div class="container" id="home">
+        
+            <div class="row">
+                <div class="col-lg-12 text-center h-content">
+                    
+                    <img src="img/logo.svg" alt="logo"/>
+                    
+                    <p>There may be aliens in our Milky Way galaxy. The probability is almost certain that there is life somewhere in space.<br /><b> How many lifes would you be able to discover?</b></p>
+                    
+                    <input type="text" id="usernameinput" placeholder="Your explorer name here">
+                    
+                    <br />
+                    
+                    <button id="nameokbtn" class="btn" onclick="username(); loadgame()">GO!</button>
+                    
+                </div>
+            </div>  
+        </div>
+        
+        
+        <div class="container-fuid" id="game">
+            <nav class="navbar navbar-default tophud">
+              <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-1">
+                    <p>Name</p>
+                    <div id="username_display"></div>
+                    </div>
+                    
+                    <div class="col-md-1">
+                    <p>Total</p>
+                    <p id="totalPoints">0</p>
+                    </div>
+                    
+                    <div class="col-md-8"><p id="timerDiv">Time: <span id="time">0</span></p></div>
+                    
+                    <div class="col-md-1"></div>
+                    
+                    <div class="col-md-1"><button id="stopbtn"  onclick="updatePoints()"> STOP </button></div>
+
+                </div>
+                  
+<!--
+                <ul class="nav navbar-nav">
+                    <div class="col-md-1"> 
+                    <p>Name</p>
+                    <div id="username_display"></div>
+                </div>
+                  <li class="active"><a href="#">Home</a></li>
+                  <li> <p id="timerDiv">Time: <span id="time">0</span></p></li>
+                  <li><p>Total</p>
+                    <p id="totalPoints">0</p></li>
+                  <li><button id="stopbtn"  onclick="updatePoints()"> STOP </button></li>
+                </ul>
+-->
+              </div>
+        </nav>
+            
+<!--
+            <div class="row tophud">
+                <div class="col-md-1"> 
+                    <p>Name</p>
+                    <div id="username_display"></div>
+                </div>
+                <div class="col-md-2"> 
+                    <p>Total</p>
+                    <p id="totalPoints">0</p>
+                </div>
+                <div class="col-md-1"> 
+                    <button id="stopbtn"  onclick="updatePoints()"> STOP </button>
+                </div>
+                 <div class="col-md-2"> 
+                    <p id="timerDiv">Time: <span id="time">0</span></p>
+                </div>
+                
+            </div>
+-->
+            
+            <div class="row justify-content-md-center">
+                <div class="solarsystem-outer col-md-12">
+                    <div id="solarsystem">
+                      <div id="sun"></div>
+                      <div class="planet" id="mercury"></div>
+                      <div class="planet" id="venus"></div>
+                      <div class="planet" id="earth"><div id="moon"></div></div>
+                      <div class="planet" id="mars"></div>
+                      <div class="planet" id="jupiter"></div>
+                      <div class="planet" id="saturn"></div>
+                    </div>
+                    </div>
+                
+                <button id="supernova" class=""  onclick="spClick()">  </button>
+                
+                <button id="whitedwarf" class=""  onclick="wdClick()">  </button>
+                
+                </div>
+            
+                <div id="message" class="col col-lg-6" ></div>
+            
+        </div>
+            
+        <div class="container" id="endPage">
+            <p>Ranking</p>
+            <div id="finalScore" class="col-md-6">
+                
+            </div>
+            <button id="nameokbtn" class="btn" onclick=" loadgame()">PLAY AGAIN</button>
+            
+        </div>
+            
+        
+         <script type="text/javascript" src="main.js"></script>
+        
+    </body>
+
+    </html>

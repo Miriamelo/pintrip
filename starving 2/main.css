@@ -1,0 +1,301 @@
+body { 
+     background-image: url("img/Stars.svg"),
+      linear-gradient(to bottom, rgb(22, 0, 30) 0%,#290031 45%,rgb(59, 0, 71) 100%);
+    background-repeat: no-repeat,
+      no-repeat,
+      no-repeat;
+    background-size: cover;
+}
+
+#modallogin p {
+    color: #a5e8e7;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 5%;
+    letter-spacing: 2px;
+}
+
+#finalScore {
+    background-color: aquamarine;
+    display: none;
+}
+
+.modallogin {
+    display: block;
+    background-image: url("img/rings.svg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.cloud1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.cloud2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.background1 {
+    position: absolute;
+    bottom: 0;
+}
+
+.background2 {
+    position: absolute;
+    left: 5%;
+}
+
+.modalname {
+    margin-top: 16%;
+}
+
+.tophud {
+    background-color: #68C8DE;
+    position: absolute;
+    z-index: 5;  
+}
+
+.gameplay {
+    display: none;
+}
+
+#nameokbtn {
+    background-color: #BA306A; 
+    color: #24022A;
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    margin-top: 2%;
+}
+
+#username {
+    border: none;
+    border-radius: 8px;
+    width: 300px;
+    padding: 10px;
+    margin-top: 3%;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+            
+.newmessage {
+    position: relative;
+    font-size: 1em;
+    color: chocolate;
+    background-color: antiquewhite;
+    margin-top: 10%;
+    }
+             
+
+#clock {
+  position: relative;
+  top: 60%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 2.4rem;
+  letter-spacing: 0.3rem;
+  color: brown;
+
+}
+
+.points {
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    color: darkcyan;
+    font-size: 1em;
+}
+
+.face {
+    position: relative;
+    width: 50px;
+}
+
+#supernova {
+    border: none;
+    background-color: #CCA753; 
+    color: #24022A;
+    width: 50px;
+    height: 50px;
+    border-radius: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#whitedwarf {
+    border: none;
+    background-color: #53ccb0; 
+    color: #24022A;
+    width: 50px;
+    height: 50px;
+    border-radius: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*solar system anims*/
+
+.solarsystem-outer{
+  overflow:;
+}
+#solarsystem{
+  position:relative;
+  margin-top:50px;
+  margin-left:300px;
+  border:0;
+  opacity:.5;
+}
+#sun{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  position:absolute;
+  left:250px;
+  margin-top:250px;
+}
+
+/* ORBIT LINES */
+#mercury{
+  width:200px;
+  height:200px;
+  position: absolute;
+  left: 200px;
+  margin-top: 200px;
+  -webkit-animation:orbit 7.23s linear infinite;
+}
+#venus{
+  width:300px;
+  height:300px;
+  position: absolute;
+  left:150px;
+  top:150px;
+  -webkit-animation:orbit 18.45s linear infinite;
+}
+#earth{
+  width:400px;
+  height:400px;
+  position: absolute;
+  left:100px;
+  top:100px;
+  -webkit-animation:orbit 30s linear infinite;
+}
+#moon{
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  position: absolute;
+  left:155px;
+  top:-18px;
+  -webkit-animation:orbit 2.4s linear infinite;
+}
+#mars{
+  width:500px;
+  height:500px;
+  position: absolute;
+  left:50px;
+  top:50px;
+  -webkit-animation:orbit 56.43s linear infinite;
+}
+#jupiter{
+   width:700px;
+  height:700px;
+  position: absolute;
+  left:-45px;
+  top:-45px;
+  -webkit-animation:orbit 355.8s linear infinite;
+}
+#saturn{
+   width:900px;
+  height:900px;
+  position: absolute;
+  left:-140px;
+  top:-140px;
+  -webkit-animation:orbit 883.8s linear infinite;
+}
+
+.planet{
+  border: 1px dashed #B72F69;;
+  border-radius:50%;
+}
+
+/*  ORBIT ANIMATION */
+@-webkit-keyframes orbit{
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+/* PLANETS */
+#mercury:after{
+  content:" ";
+  width:10px;
+  height:10px;
+  position:absolute;
+  top:-5px;
+}
+#venus:after{
+  content:" ";
+  width:20px;
+  height:20px;
+  position:absolute;
+  top:85px;
+  right:0;
+}
+#earth:after{
+  content:" ";
+  width:25px;
+  height:25px;
+  position:absolute;
+  top:-12px;
+}
+#moon:after{
+  content:" ";
+  width:8px;
+  height:8px;
+  position:absolute;
+  top:-12px;
+}
+#mars:after{
+  content:" ";
+  width:12px;
+  height:12px;
+  position:absolute;
+  top:-4px;
+}
+#jupiter:after{
+  content:" ";
+  width:100px;
+  height:100px;
+  position:absolute;
+  top:220px;
+  right:-40px;
+}
+#saturn:after{
+  content:" ";
+  width:80px;
+  height:80px;
+  position:absolute;
+  top:340px;
+  right:-35px;
+}
+
+
+/* PLANET COLOR */
+#sun, #mercury:after, #venus:after, #earth:after, #moon:after, #jupiter:after, #saturn:after, #uranus:after, #neptune:after{
+    background:#B72F69;
+}
+ #mars:after{
+   background:red;
+ }
+#mercury:after, #venus:after, #earth:after, #moon:after, #mars:after, #jupiter:after, #saturn:after, #uranus:after, #neptune:after{
+  border-radius:50%;
+  margin-left:40%;
+}
+    

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="439px" height="239px" viewBox="0 0 439 239" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-495.000000, -201.000000)">
+        <g id="logo" transform="translate(496.000000, 202.000000)">
+            <text id="STAR-VING" font-family="AvenirNext-Bold, Avenir Next" font-size="72" font-weight="bold" letter-spacing="3.14222097">
+                <tspan x="27" y="145" fill="#B3FDFC">STAR  </tspan>
+                <tspan x="261.205326" y="145" font-family="AvenirNext-UltraLight, Avenir Next" font-weight="200" fill="#1DE7E9">VING</tspan>
+            </text>
+            <circle id="Oval-2" stroke="#FDFDFD" cx="118.5" cy="118.5" r="118.5"></circle>
+            <circle id="Oval-3" fill="#FDFDFD" cx="27.5" cy="41.5" r="16.5"></circle>
+            <circle id="Oval-3-Copy" fill="#FDFDFD" cx="208.5" cy="195.5" r="9.5"></circle>
+        </g>
+    </g>
+</svg>
