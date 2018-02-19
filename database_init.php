@@ -2,8 +2,8 @@
 
 header("Access-Control-Allow-Origin: *");
     $servername = "http://54.186.123.71/";
-    $dblogin = "ec2-user@54.186.123.71";
-    $password = "";
+    $dblogin = "root";
+    $password = "root";
     $dbname = "pintrip_db";
     
     try {
