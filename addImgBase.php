@@ -36,14 +36,14 @@ include_once "database_init.php";
       
    
         <input id='loadImg' type="file" accept="image/*" capture="camera" name='photo'/>
- <form id="imgForm" method="post" action="#">
+ <!--<form id="imgForm" method="post" action="#">-->
         <button  
             onclick="saveImage();"
             id='saveAll'
             method='post'
             >Save Image
         </button>
-    </form>
+    <!--</form>-->
     
     <!--<img src="../assets/camera-icon.svg" class='barImg' type="file" accept="image/*" capture="camera"/>-->
       
