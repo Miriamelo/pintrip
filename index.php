@@ -2,7 +2,7 @@
     require_once 'logindata.php';
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
