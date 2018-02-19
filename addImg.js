@@ -93,7 +93,6 @@ function saveImage(){
         xhr = new ActiveXObject("Microsoft.XMLHTTP");
     }
     
-    
      xhr.open("POST", "addImg_db.php", true); 
      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");                  
      xhr.send(data);
