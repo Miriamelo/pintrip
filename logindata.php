@@ -2,7 +2,7 @@
 	include_once 'database_init.php';
 	//return $conn variable.
 
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
+if ($_SERVER['REQUEST_METHOD'] == "POST"){
     
         $sql = "SELECT * FROM Photos";    
     
