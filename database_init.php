@@ -1,6 +1,6 @@
 <?php
 //provide your hostname, username and dbname
-$host="54.186.123.71"; 
+$host="localhost"; 
 $username="ec2-user";  
 $password="";
 $db_name="pintrip_db"; 
