@@ -7,6 +7,6 @@
         $date = $_POST['date'];
         
       
-        $sql = "INSERT INTO Photos (photo, coordinates, place_name, date) VALUES ('$photo', '$coordinates', '$place_name', '$date')";
+        $sql = "INSERT INTO Photo (photo, coordinates, place_name, date) VALUES ('$photo', '$coordinates', '$place_name', '$date')";
         $conn->exec($sql);
 ?>

@@ -84,9 +84,11 @@ function findPos(){
 
 function saveImage(){
             var fd = new FormData();
+    
             fd.append("coordinates", document.getElementById("latlng").value);
             console.log(document.getElementById('latlng').value);
-                fetch("database_init.php",{
+    
+                fetch("addImg_db.php",{
                     credentials: 'same-origin',
                     method:"POST",
                     body:fd
