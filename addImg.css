@@ -34,6 +34,9 @@ html, body {
 }
 #latlng{
     width: 225px;
+    z-index: 500;
+    background-color: springgreen;
+    height: 100px;
 }
 
 #bottomBar{
