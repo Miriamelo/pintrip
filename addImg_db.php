@@ -1,5 +1,5 @@
 <?php
-
+/*
         phpinfo();
         include_once "database_init.php";
 
@@ -12,10 +12,10 @@
       
         $sql = "INSERT INTO Photo (photo, coordinates, place_name, date) VALUES ('$photo', '$coordinates', '$place_name', '$date')";
         $conn->exec($sql);
-        
+        */
 ?>
 
-<?php /*
+<?php
     header("Access-Control-Allow-Origin: *");
     $servername = "http://54.186.123.71";
     $dblogin = "ec2-user";
@@ -41,6 +41,6 @@
     } catch(PDOException $e) {
         $error = $e->getMessage();
         echo "<p style='color: red;'>$error</p>";
-    }*/
+    }
 ?>
 
