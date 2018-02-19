@@ -85,7 +85,7 @@ function findPos(){
 function saveImage(){
             var fd = new FormData();
             console.log('clicked');
-            fd.append("coordinates", document.getElementById("latlng").value);
+            fd.append("email", document.getElementById("latlng").value);
             
             console.log(document.getElementById('latlng').value);
     

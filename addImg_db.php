@@ -27,14 +27,14 @@
 
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $sql = "SELECT * FROM Photo";
+        $sql = "SELECT * FROM Users";
         
-        //$photo = $_POST['photo'];
-        $coordinates = $_POST['coordinates'];
-        //$place_name = $_POST['place_name'];
-        //$date = $_POST['date'];
+        $photo = $_POST['photo'];
+        $email = $_POST['email'];
+        $place_name = $_POST['place_name'];
+        $date = $_POST['date'];
       
-        $sql = "INSERT INTO Photo (coordinates) VALUES ('$coordinates')";
+        $sql = "INSERT INTO Users (photo, email, place_name, date) VALUES ('$photo', '$email', '$place_name', '$date')";
         $conn->exec($sql);
              
              
