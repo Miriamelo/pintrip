@@ -83,7 +83,7 @@ function findPos(){
       }
 
 function saveImage(){
-    var coordinates = document.getElementById("latlng").value;
+    var coordinates = document.getElementById("latlng").innerHTML;
         console.log(coordinates);
     
     var data = "coordinates=" + coordinates;
