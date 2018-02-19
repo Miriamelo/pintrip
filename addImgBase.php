@@ -36,7 +36,7 @@ require_once('database_init.php');
       
     <input id='loadImg' type="file" accept="image/*" capture="camera"/>
     
-    <button onclick="uploadImg();">Upload Image</button>
+    <button id='saveAll' onclick="saveImg();">Upload Image</button>
     
     <!--<img src="../assets/camera-icon.svg" class='barImg' type="file" accept="image/*" capture="camera"/>-->
       
