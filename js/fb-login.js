@@ -65,7 +65,7 @@
   function testAPI() {
     console.log('Welcome!  Fetching your information.... ');    
       
-    FB.api('/me','GET', {fields: 'name,email,id'}, function(response) {
+    FB.api('/me','GET', {fields: 'name,email,id,picture.width(150).height(150)'}, function(response) {
         var loginData = "name="+response.name+"&email="+response.email+"&fb_Id="+response.id+"&picture="+response.picture.data.url;
         
         console.log('Successful login for: ' + response.name); 
