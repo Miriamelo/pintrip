@@ -2,7 +2,7 @@
 	include_once 'database_init.php';
 	//return $conn variable.
 
-        $sql = "SELECT * FROM Photos";    
+        $sql = "SELECT * FROM Users";    
     
 		$name = $_POST['name'];
 		$email = $_POST['email'];

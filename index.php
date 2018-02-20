@@ -1,5 +1,5 @@
 <?php
-    require_once 'logindata.php';
+    //require_once 'logindata.php';
 ?>
 
 <!DOCTYPE html>
