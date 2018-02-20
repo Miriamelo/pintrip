@@ -83,6 +83,6 @@
       }
       xmlhttp.send(loginData);
     
-    document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name +"<br> Email : "+ response.email +"<br> Profile Id :  "+ response.id + "Picture URL: "+response.picture.data.url+'!';    
+//    document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name +"<br> Email : "+ response.email +"<br> Profile Id :  "+ response.id + "Picture URL: "+response.picture.data.url+'!';    
     });
   }
