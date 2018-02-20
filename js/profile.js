@@ -3,7 +3,7 @@ function statusChangeCallback(response) {
     console.log(response);
     if (response.status === 'connected') {
         showData();
-    } else (response.status === 'unknown') {
+    } else if (response.status === 'unknown') {
         FB.api('/me', function(response) {
             window.location = "index.php";
             document.getElementById("myName").innerHTML = "You are not logged in!";
