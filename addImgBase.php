@@ -34,24 +34,37 @@ include_once "database_init.php";
           <img src="assets/user-icon.svg" class='barImg'/>
       </div>
       
-   
+      <div id='loadImgDiv'>
         <input id='loadImg' type="file" accept="image/*" capture="camera" name='photo'/>
- <!--<form id="imgForm" method="post" action="#">-->
+      </div>
+        
+ <form id="imgForm" method="post" action="#">
         <button  
             onclick="saveImage();"
             id='saveAll'
             method='post'
             >Save Image
         </button>
+        
+<!--ALL OF THESE NEED TO BE HIDDEN-->
       <div id='showcoords'></div>
-      <div id='coordinates_display'></div>
-    <!--</form>-->
+      <div id='lat' name='lat'></div>
+      <div id='lng' name='lng'></div>
+      <div id='place_name' name='place_name'></div>
+      <div id='curdate' name='date'></div>
+      <div id='photoDiv' name='photo'></div>
+<!--ALL OF THESE NEED TO BE HIDDEN-->      
+      
+    </form>
     
     <!--<img src="../assets/camera-icon.svg" class='barImg' type="file" accept="image/*" capture="camera"/>-->
-      
+ 
+    
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkFlD1s3Mkc6gTU6ER65juJEiHUWgsDkw&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkFlD1s3Mkc6gTU6ER65juJEiHUWgsDkw&libraries=places&callback=initMap">
     </script>
+    
+    <script
   </body>
 </html>
 

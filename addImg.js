@@ -13,7 +13,9 @@ function initMap(position) {
         var xlat = position.coords.latitude;
         var xlng = position.coords.longitude;
         var location = {lat: xlat, lng: xlng};
-    console.log(location);
+    
+    var showLat = document.getElementById('lat').innerHTML= location.lat;
+    var showLng = document.getElementById('lng').innerHTML= location.lng;
     
         var thisPos= document.getElementById("latlng").innerHTML = location;
 //zoom on your location
@@ -33,6 +35,7 @@ function initMap(position) {
             document.getElementById('submit').addEventListener('click', function() {
                 geocodeLatLng(geocoder, map, infowindow);
             });
+       
 }
 
 function findPos(){
@@ -50,18 +53,48 @@ function findPos(){
 
     function error(err) {
                 console.warn('ERROR(${err.code}): ${err.message}');
-    };
+    }
             
             var pos = navigator.geolocation.getCurrentPosition(success, error, options);
 }
 
       function geocodeLatLng(geocoder, map, infowindow) {
+//get current date
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth()+1; //January is 0!
+            
+            var yyyy = today.getFullYear();
+            if(dd<10){
+                dd='0'+dd;
+            } 
+            if(mm<10){
+                mm='0'+mm;
+            } 
+            var today = yyyy+'-'+mm+'-'+dd;
+            var curdate = document.getElementById("curdate").value = today;
+            console.log(curdate);
+          
 //get the coordinates from the input and show the common name for your location
-            var input = document.getElementById('latlng').value;
+            var lat = document.getElementById('lat').innerHTML;
+            var lng = document.getElementById('lng').innerHTML;
+            var latlng = lat + ', ' + lng;
+            console.log(latlng);
+            
+            var input = latlng;
             var latlngStr = input.split(',', 2);
             var latlng = {lat: parseFloat(latlngStr[0]), lng: parseFloat(latlngStr[1])};
                 geocoder.geocode({'location': latlng}, function(results, status) {
                     
+                         
+//SET UP PLACES             
+        var service = new google.maps.places.PlacesService(map);
+
+        service.getDetails({
+          placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'
+        }, function(place, status) {
+            
+             
 //this is not completely necessary for the user but makes it eaiser for development
             if (status === 'OK') {
                 if (results[0]) {
@@ -70,65 +103,72 @@ function findPos(){
                         position: latlng,
                         map: map
                     });
+                    
+            google.maps.event.addListener(marker, 'click', function() {
+              infowindow.setContent('<div><strong>' + place.vicinity + '</strong><br>' +
+                'Price: ' + place.price_level + '<br>' +
+                'Rating: ' + place.rating + '<br>' +'</div>');
+              infowindow.open(map, this);
+            });
+            
 //show common name for your location
 //WE NEED TO SEND formatted_address TO THE DATABASE
-              infowindow.setContent(results[0].formatted_address);
-              infowindow.open(map, marker);
+             //infowindow.setContent(results[0].formatted_address + '</br>' + results[0].price_level);
+              
+              //document.getElementById('place_name').innerHTML = results[0].formatted_address;
+              //console.log('hello');
+              
+              //infowindow.open(map, marker);
             } else {
               window.alert('No results found');
             }
           } else {
             window.alert('Geocoder failed due to: ' + status);
           }
+        
         });
+        
+        });
+//END SET UP PLACES
+
       }
+      
 
 function saveImage(){
-    var coordinates = document.getElementById("latlng").innerHTML;
-        console.log(coordinates);
-    
-    var data = "coordinates=" + coordinates;
-    var xhr;
-    if (window.XMLHttpRequest) { // Mozilla, Safari, ...
-        xhr = new XMLHttpRequest();
-    } else if (window.ActiveXObject) { // IE 8 and older
-        xhr = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    
-     xhr.open("POST", "addImg_db.php", true); 
-     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");                  
-     xhr.send(data);
-    
-	 xhr.onreadystatechange = display_data;
-    
-	function display_data() {
-	 if (xhr.readyState == 4) {
-      if (xhr.status == 200) {
-       document.getElementById("coordinates_display").innerHTML = xhr.responseText;
-          
-          console.log("Done!");
-      } else {
-        alert('There was a problem with the request.');
-      }
-     }
-	}
-}
-
-
-/*
-function saveImage(){
-            var fd = new FormData();
-            console.log('clicked');
-            fd.append("email", document.getElementById("latlng").value);
+        document.getElementById("imgForm").onsubmit = function (ev) {
+            ev.preventDefault();
             
-            console.log(document.getElementById('latlng').value);
-    
-            console.log('appended');
-    
-                fetch("addImg_db.php",{
-                    credentials: 'same-origin',
-                    method:"POST",
-                    body:fd
-                })
-            console.log('through');
-}*/
+                var fd = new FormData();
+                    fd.append("lat", document.getElementById("lat").innerHTML);
+                    fd.append("lng", document.getElementById("lng").innerHTML);
+                    fd.append("place_name", document.getElementById("place_name").innerHTML);
+                    fd.append("date", document.getElementById("curdate").value);
+                    
+                        fetch("addImg_db.php",{
+                            credentials: 'same-origin',
+                            method:"POST",
+                            body:fd
+                        })
+                        /*.then((resp)=>{return resp.text()}).then((json)=>{console.log(json)
+                            window.location.href = "landingLogin.php";
+                        });*/
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

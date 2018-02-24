@@ -1,10 +1,10 @@
 <?php
 
 header("Access-Control-Allow-Origin: *");
-    $servername = "localhost";
-    $dblogin = "root";
-    $password = "";
-    $dbname = "pintrip_db";
+    $servername = "pintrip.taliawalkey.ca";
+    $dblogin = "talia185_pintrip";
+    $password = "pintrip";
+    $dbname = "talia185_pintrip_db";
     
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
@@ -15,21 +15,5 @@ header("Access-Control-Allow-Origin: *");
         $error = $e->getMessage();
         echo "<p style='color: red;'>$error</p>";
     }
-/*
-//provide your hostname, username and dbname
-
-$host="localhost"; 
-$username="ec2-user";  
-$password="";
-$db_name="pintrip_db"; 
-
-$conn = new mysqli($host, $username, $password);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-console.log("Connected successfully");
-
-mysqli_select_db($conn, "$db_name");
-*/
+    
 ?>
