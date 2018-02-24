@@ -159,3 +159,7 @@ html, body {
     position: relative;
     bottom: 33px;
 }
+
+.hiddenEl{
+    opacity:0.0;
+}

@@ -18,8 +18,10 @@ header("Access-Control-Allow-Origin: *");
             $date = $_POST['date'];
             $ratings = $_POST['ratings'];
           
-            $sql = "INSERT INTO photo (photo,lat,lng,place_name,date,ratings) VALUES ('$photo', '$lat', '$lng', '$place_name', '$date', '$ratings')";
+         echo $sql;
+         
             $conn->exec($sql);
+            
 
 
     } catch(PDOException $e) {

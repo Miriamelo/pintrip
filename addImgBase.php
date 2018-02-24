@@ -20,7 +20,7 @@ include_once "database_init.php";
       <input id="latlng" type="text" name='coordinates'>
       <!--<input id="submit" type="button" value="Save Location">-->
     </div>
-      
+  
       
 <!-- map background -->      
     <div id="map"></div>
@@ -38,7 +38,7 @@ include_once "database_init.php";
         <input id='loadImg' type="file" accept="image/*" capture="camera" name='photo'/>
       </div>
         
- <form id="imgForm" method="POST" action="#" enctype="multipart/form-data">
+ <form id="imgForm" method="post" action="#">
         <button  
             onclick="saveImage();"
             id='saveAll'
@@ -47,12 +47,13 @@ include_once "database_init.php";
         </button>
         
 <!--ALL OF THESE NEED TO BE HIDDEN-->
-      <div id='showcoords'></div>
-      <div id='lat' name='lat'></div>
-      <div id='lng' name='lng'></div>
-      <div id='place_name' name='place_name'></div>
-      <div id='curdate' name='date'></div>
-      <div id='photoDiv' name='photo'></div>
+      <div class='hiddenEl' id='showcoords'></div>
+      <div class='hiddenEl' id='lat' name='lat'></div>
+      <div class='hiddenEl' id='lng' name='lng'></div>
+      <div class='hiddenEl' id='place_name' name='place_name'></div>
+      <div class='hiddenEl' id='curdate' name='date'></div>
+      <div class='hiddenEl' id='photoDiv' name='photo'></div>
+      <div class='hiddenEl' id='rating' name='rating'></div>
 <!--ALL OF THESE NEED TO BE HIDDEN-->      
       
     </form>

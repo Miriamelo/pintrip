@@ -85,13 +85,12 @@ function findPos(){
             var latlngStr = input.split(',', 2);
             var latlng = {lat: parseFloat(latlngStr[0]), lng: parseFloat(latlngStr[1])};
                 geocoder.geocode({'location': latlng}, function(results, status) {
-                    
                          
-//SET UP PLACES             
+//SET UP PLACES
         var service = new google.maps.places.PlacesService(map);
 
         service.getDetails({
-          placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'
+          placeId: results[0].place_id
         }, function(place, status) {
             
              
@@ -100,25 +99,20 @@ function findPos(){
                 if (results[0]) {
                   map.setZoom(16);
                     var marker = new google.maps.Marker({
+                        placeId: results[0].place_id,
                         position: latlng,
                         map: map
                     });
                     
-            google.maps.event.addListener(marker, 'click', function() {
-              infowindow.setContent('<div><strong>' + place.vicinity + '</strong><br>' +
-                'Price: ' + place.price_level + '<br>' +
-                'Rating: ' + place.rating + '<br>' +'</div>');
-              infowindow.open(map, this);
-            });
-            
-//show common name for your location
-//WE NEED TO SEND formatted_address TO THE DATABASE
-             //infowindow.setContent(results[0].formatted_address + '</br>' + results[0].price_level);
+              infowindow.setContent('<div><strong>' + place.formatted_address + '</strong><br>' +
+                'Rating: ' + place.rating + '<br>'+'</div>');
+              infowindow.open(map, marker);
               
-              //document.getElementById('place_name').innerHTML = results[0].formatted_address;
-              //console.log('hello');
+             var place_name = document.getElementById('place_name').innerHTML = place.formatted_address;
+             console.log(place_name);
               
-              //infowindow.open(map, marker);
+             var insRating = document.getElementById('rating').innerHTML=place.rating;
+              
             } else {
               window.alert('No results found');
             }
@@ -143,6 +137,7 @@ function saveImage(){
                     fd.append("lng", document.getElementById("lng").innerHTML);
                     fd.append("place_name", document.getElementById("place_name").innerHTML);
                     fd.append("date", document.getElementById("curdate").value);
+                    fd.append("ratings", document.getElementById("rating").value);
                     
                         fetch("addImg_db.php",{
                             credentials: 'same-origin',
