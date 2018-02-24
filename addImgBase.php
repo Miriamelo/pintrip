@@ -38,7 +38,7 @@ include_once "database_init.php";
         <input id='loadImg' type="file" accept="image/*" capture="camera" name='photo'/>
       </div>
         
- <form id="imgForm" method="post" action="#">
+ <form id="imgForm" method="POST" action="#" enctype="multipart/form-data">
         <button  
             onclick="saveImage();"
             id='saveAll'

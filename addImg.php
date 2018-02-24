@@ -7,7 +7,7 @@ include_once "database_init.php";
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Reverse Geocoding</title>
+    <title>Pintrip</title>
     <link rel="stylesheet" type="text/css" href="addImg.css">
     <script type='text/javascript' src='addImg.js'></script> 
   </head>
