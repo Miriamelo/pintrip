@@ -47,7 +47,7 @@
               <a href="index.html"><img src="assets/home-icon-blue.svg" class='barImg'/>  </a> 
               <img src="assets/bucketlist-icon.svg" class='barImg'/>
               <img src="assets/add-icon.svg" class='barImg' id='submit'/>
-              <a href="explore.html"><img src="assets/explore-icon.svg" class='barImg'/></a>
+              <a href="explore.php"><img src="assets/explore-icon.svg" class='barImg'/></a>
               <img src="assets/user-icon.svg" class='barImg'/>
                 </div>
         </footer>      
