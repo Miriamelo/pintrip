@@ -2,7 +2,7 @@
 <footer class="footer">
                 <div class="container">
                   <a href="dashboard.php"><img src="assets/home-icon-blue.svg" class='barImg'/>  </a> 
-                  <img src="assets/bucketlist-icon.svg" class='barImg'/>
+                    <a href="bucketlist.php"><img src="assets/bucketlist-icon.svg" class='barImg'/></a>
                     <a href="#"><img src="assets/add-icon.svg" class='barImg' id='submit'/></a>
                   <a href="explore.php"><img src="assets/explore-icon.svg" class='barImg'/></a>
                     <a href="profile.php"><img src="assets/user-icon.svg" class='barImg'/></a>

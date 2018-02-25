@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
-        <title>Explore</title>
+        <title>My Bucket List</title>
         
         <link rel="stylesheet" type="text/css" href="css/explore.css">
         <link rel="stylesheet" type="text/css" href="addImg.css">
@@ -28,7 +28,7 @@
         <div class="container-fullwidth">
           <div class="row">
             <div class="col mtitle">
-              EXPLORE
+              MY BUCKET LIST 
             </div>
           </div>
           <div class="row gallery">
@@ -37,8 +37,11 @@
         // Include the database configuration file
         include 'db_init.php';
               
+              $user = $_POST['user'];
+              
               // Get images from the database
-        $query = $db->query("SELECT * FROM photo");
+        $query = $db->query("SELECT *
+FROM bucket_list WHERE user LIKE '$user%'");
         
         if($query->num_rows > 0){
             while($row = $query->fetch_assoc()){
@@ -66,7 +69,8 @@
         </div>
         <?php include 'navbar.php'; ?>
 
-        
+        <script type="text/javascript" src="bucketlist.js"></script>
+
     </body>
 
     </html>
