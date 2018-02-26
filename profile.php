@@ -34,11 +34,7 @@ session_start();
             <div class="col-sm-4 text-center name-div">
                 <img id="profilePic" alt="profile pic"/>
                 <p>Name: 
-                    <?php echo $_SESSION['user']['name'];?>
                     <span id="myName"></span>
-                </p>
-                <p>Email: 
-                    <?php echo $_SESSION['user']['email'];?>
                 </p>
             </div>
             <div class="col-sm-8"></div>

@@ -5,6 +5,8 @@ session_start();
 //phpinfo();
 //echo session_id();
 
+$_SESSION["session_ID"] = session_id();
+
 ?>
 
 <!DOCTYPE html>

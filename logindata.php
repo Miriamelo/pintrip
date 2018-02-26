@@ -16,12 +16,4 @@
     
         $conn->exec($sql);
 
-
-        $_SESSION['user'] = array();
-        $_SESSION['user']['session_ID'] = session_id();
-        $_SESSION['user']['name'] = $name;
-        $_SESSION['user']['email'] = $email;
-        $_SESSION['user']['fb_Id'] = $fb_Id;
-        $_SESSION['user']['picture'] = $picture;
-
  ?> 
