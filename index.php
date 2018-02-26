@@ -1,3 +1,14 @@
+<?php
+session_start();
+//var_dump($_SESSION);
+//console.log($_SESSION);
+//phpinfo();
+//echo session_id();
+
+$_SESSION["session_ID"] = session_id();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
