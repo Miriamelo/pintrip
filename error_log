@@ -313,3 +313,469 @@ Stack trace:
 #1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
 #2 {main}
   thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[24-Feb-2018 21:25:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[24-Feb-2018 21:25:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[24-Feb-2018 21:25:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[24-Feb-2018 22:47:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/talia185/pintrip.taliawalkey.ca/explore_gallery.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/explore_gallery.php on line 6
+[24-Feb-2018 23:00:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/explore.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[24-Feb-2018 23:00:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/talia185/pintrip.taliawalkey.ca/explore.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/explore.php on line 42
+[24-Feb-2018 23:29:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/explore.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[24-Feb-2018 23:29:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/talia185/pintrip.taliawalkey.ca/explore.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/explore.php on line 41
+[24-Feb-2018 23:29:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[24-Feb-2018 23:29:15 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[24-Feb-2018 23:29:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[24-Feb-2018 23:29:17 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[24-Feb-2018 23:29:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10155866715550813' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 00:22:25 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 00:25:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 00:25:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10208334057307603' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 00:39:06 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 00:39:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10208334057307603' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 00:39:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 00:39:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10208334057307603' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 01:46:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[25-Feb-2018 01:46:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 01:46:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 01:47:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 01:47:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10208334057307603' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 01:59:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[25-Feb-2018 01:59:40 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 01:59:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 02:00:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 02:03:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 02:03:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1552256638228109' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 21:12:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[25-Feb-2018 21:12:54 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 21:12:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 21:14:13 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 21:14:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10208334057307603' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 22:05:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[25-Feb-2018 22:05:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 22:05:01 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 22:08:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[25-Feb-2018 22:08:14 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 22:08:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 22:15:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[25-Feb-2018 22:15:34 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 22:15:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 22:15:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[25-Feb-2018 22:15:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 22:15:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 22:15:47 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 22:15:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1552256638228109' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 22:16:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[25-Feb-2018 22:16:53 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 22:16:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 22:16:54 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 22:16:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1552256638228109' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 22:17:17 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 22:17:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1552256638228109' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 22:18:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[25-Feb-2018 22:18:07 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 22:18:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 22:18:08 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 22:18:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1552256638228109' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 23:15:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[25-Feb-2018 23:15:17 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 23:15:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 23:54:10 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 23:54:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1552256638228109' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 23:56:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[25-Feb-2018 23:56:18 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 23:56:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 23:56:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 23:56:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10155866715550813' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[25-Feb-2018 23:56:58 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[25-Feb-2018 23:56:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10155866715550813' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[26-Feb-2018 00:01:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[26-Feb-2018 00:01:12 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[26-Feb-2018 00:01:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[26-Feb-2018 00:01:30 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[26-Feb-2018 00:01:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1552256638228109' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[26-Feb-2018 00:01:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[26-Feb-2018 00:01:32 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[26-Feb-2018 00:01:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[26-Feb-2018 00:01:42 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[26-Feb-2018 00:01:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1552256638228109' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[26-Feb-2018 00:22:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[26-Feb-2018 00:22:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[26-Feb-2018 00:22:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[26-Feb-2018 00:42:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[26-Feb-2018 00:42:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1552256638228109' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:43 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:40:57 UTC] PHP Warning:  Illegal string offset 'uid' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 31
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:07 UTC] PHP Warning:  Illegal string offset 'lng' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 29
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 01:41:37 UTC] PHP Warning:  Illegal string offset 'lat' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 02:56:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[26-Feb-2018 02:56:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[26-Feb-2018 02:56:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[26-Feb-2018 02:56:05 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[26-Feb-2018 02:56:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10208334057307603' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[26-Feb-2018 04:15:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_assoc() in /home/talia185/pintrip.taliawalkey.ca/home_db.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 24
+[26-Feb-2018 04:16:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_assoc() in /home/talia185/pintrip.taliawalkey.ca/home_db.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 24
+[26-Feb-2018 04:17:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_assoc() in /home/talia185/pintrip.taliawalkey.ca/home_db.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 24
+[26-Feb-2018 04:30:47 UTC] PHP Fatal error:  Cannot use [] for reading in /home/talia185/pintrip.taliawalkey.ca/home.php on line 27
+[26-Feb-2018 05:23:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/talia185/pintrip.taliawalkey.ca/home_db.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 21
+[26-Feb-2018 05:23:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/talia185/pintrip.taliawalkey.ca/home_db.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 21
+[26-Feb-2018 05:24:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/talia185/pintrip.taliawalkey.ca/home_db.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 21
+[26-Feb-2018 05:24:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/talia185/pintrip.taliawalkey.ca/home_db.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 21
+[26-Feb-2018 05:24:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_assoc() in /home/talia185/pintrip.taliawalkey.ca/home_db.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 24
+[26-Feb-2018 05:26:14 UTC] PHP Fatal error:  Cannot use [] for reading in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 34
+[26-Feb-2018 05:27:14 UTC] PHP Fatal error:  Cannot use [] for reading in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 28
+[26-Feb-2018 05:32:09 UTC] PHP Fatal error:  Cannot use [] for reading in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 32
+[26-Feb-2018 05:35:23 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 21
+[26-Feb-2018 06:00:59 UTC] PHP Fatal error:  Uncaught Error: Unsupported operand types in /home/talia185/pintrip.taliawalkey.ca/home_db.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 18:31:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[26-Feb-2018 18:31:30 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[26-Feb-2018 18:31:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[26-Feb-2018 18:32:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[26-Feb-2018 18:32:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[26-Feb-2018 18:32:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[26-Feb-2018 18:41:47 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[26-Feb-2018 18:41:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10155866715550813' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[26-Feb-2018 18:41:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[26-Feb-2018 18:41:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[26-Feb-2018 18:41:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[26-Feb-2018 18:42:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/talia185/pintrip.taliawalkey.ca/index.php:1) in /home/talia185/pintrip.taliawalkey.ca/database_init.php on line 3
+[26-Feb-2018 18:42:24 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[26-Feb-2018 18:42:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 /home/talia185/pintrip.taliawalkey.ca/index.php(49): require_once('/home/talia185/...')
+#2 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[26-Feb-2018 18:49:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 14
+[26-Feb-2018 18:49:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10208334057307603' for key 'oauth_uid' in /home/talia185/pintrip.taliawalkey.ca/logindata.php:16
+Stack trace:
+#0 /home/talia185/pintrip.taliawalkey.ca/logindata.php(16): PDO->exec('INSERT INTO Use...')
+#1 {main}
+  thrown in /home/talia185/pintrip.taliawalkey.ca/logindata.php on line 16
+[26-Feb-2018 19:01:08 UTC] PHP Warning:  Creating default object from empty value in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 28
+[26-Feb-2018 19:02:08 UTC] PHP Warning:  Creating default object from empty value in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 28
+[26-Feb-2018 19:02:21 UTC] PHP Warning:  Creating default object from empty value in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 28
+[26-Feb-2018 19:02:38 UTC] PHP Warning:  Creating default object from empty value in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 28
+[26-Feb-2018 19:03:13 UTC] PHP Warning:  Creating default object from empty value in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 28
+[26-Feb-2018 19:03:38 UTC] PHP Warning:  Creating default object from empty value in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 28
+[26-Feb-2018 19:03:49 UTC] PHP Warning:  Creating default object from empty value in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 27
+[26-Feb-2018 19:04:25 UTC] PHP Warning:  Creating default object from empty value in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 28
+[26-Feb-2018 19:04:36 UTC] PHP Warning:  Creating default object from empty value in /home/talia185/pintrip.taliawalkey.ca/home_db.php on line 28

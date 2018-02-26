@@ -25,14 +25,6 @@ include_once "database_init.php";
 <!-- map background -->      
     <div id="map"></div>
     
-<!--bottom bar-->
-      <div id='bottomBar'>
-          <img src="assets/home-icon.svg" class='barImg'/>  
-          <img src="assets/bucketlist-icon.svg" class='barImg'/>
-          <img src="assets/add-icon-blue.svg" class='barImg' id='submit'/>
-          <img src="assets/explore-icon.svg" class='barImg'/>
-          <img src="assets/user-icon.svg" class='barImg'/>
-      </div>
       
       <div id='loadImgDiv'>
         <input id='loadImg' type="file" accept="image/*" capture="camera" name='photo'/>
@@ -40,7 +32,7 @@ include_once "database_init.php";
         
  <form id="imgForm" method="post" action="#">
         <button  
-            onclick="saveImage();"
+            onclick="saveIt();"
             id='saveAll'
             method='post'
             >Save Image
@@ -54,9 +46,30 @@ include_once "database_init.php";
       <div class='hiddenEl' id='curdate' name='date'></div>
       <div class='hiddenEl' id='photoDiv' name='photo'></div>
       <div class='hiddenEl' id='rating' name='rating'></div>
+      <div class='hiddenEl' id='user' name='user'></div>
+      <div class='hiddenEl' id='url' name='web_url'></div>
 <!--ALL OF THESE NEED TO BE HIDDEN-->      
-      
     </form>
+    
+    
+<!--bottom bar-->
+      <div id='bottomBar'>
+          <a href="home.php">
+                <img src="assets/home-icon-blue.svg" class='barImg'/> 
+          </a>
+          <a href="bucketlist.php">
+                <img src="assets/bucketlist-icon.svg" class='barImg'/>
+          </a>
+          
+                <img src="assets/add-icon.svg" class='barImg' id='submit'/>
+          
+          <a href="explore.html">
+                <img src="assets/explore-icon.svg" class='barImg'/>
+          </a> 
+          <a href="profile.php">
+                <img src="assets/user-icon.svg" class='barImg'/>
+          </a>
+      </div>
     
     <!--<img src="../assets/camera-icon.svg" class='barImg' type="file" accept="image/*" capture="camera"/>-->
  
@@ -65,8 +78,5 @@ include_once "database_init.php";
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkFlD1s3Mkc6gTU6ER65juJEiHUWgsDkw&libraries=places&callback=initMap">
     </script>
     
-    <script
   </body>
 </html>
-
-<!--AIzaSyCsx9JDAa6bkPiegmzMEelHLwcNyFX6J1A-->

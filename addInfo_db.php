@@ -9,18 +9,15 @@ header("Access-Control-Allow-Origin: *");
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-//push info to photo table
-            $sql = "SELECT * FROM photo";
+//push info to ratings table            
+            $sql = "SELECT * FROM trip_ratings";
             
-            $photo = $_POST['photo'];
-            $lat = $_POST['lat'];
-            $lng = $_POST['lng'];
             $place_name = $_POST['place_name'];
-            $date = $_POST['date'];
-            $ratings = $_POST['ratings'];
+            $overall_rating = $_POST['overall_rating'];
+            $web_url = $_POST['web_url'];
             
           
-            $sql = "INSERT INTO photo (img_path,lat,lng,place_name,date,ratings) VALUES ('$photo', '$lat', '$lng', '$place_name', '$date', '$ratings')";
+            $sql = "INSERT INTO trip_ratings (place_name,overall_rating,web_url)VALUES ('$place_name','$overall_rating','$web_url')";
             $conn->exec($sql);
 
 

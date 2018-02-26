@@ -105,11 +105,15 @@ function findPos(){
                     });
                     
               infowindow.setContent('<div><strong>' + place.formatted_address + '</strong><br>' +
-                'Rating: ' + place.rating + '<br>'+'</div>');
+                'Rating: ' + place.rating + '<br>' +
+                'url: ' + place.opening_hours + '<br>'+'</div>');
               infowindow.open(map, marker);
               
              var place_name = document.getElementById('place_name').innerHTML = place.formatted_address;
              console.log(place_name);
+             
+             var url = document.getElementById('url').innerHTML = place.icon;
+             console.log(url);
               
              var insRating = document.getElementById('rating').innerHTML=place.rating;
               
@@ -124,20 +128,27 @@ function findPos(){
         
         });
 //END SET UP PLACES
-
       }
       
-
-function saveImage(){
-        document.getElementById("imgForm").onsubmit = function (ev) {
+function getUserNum(){
+        var curuser = document.getElementById('user').innerHTML = 'this is user 1';
+        console.log(curuser);
+}      
+      
+      
+function saveIt(){
+    document.getElementById("imgForm").onsubmit = function (ev) {
             ev.preventDefault();
             
+    }
+
                 var fd = new FormData();
                     fd.append("lat", document.getElementById("lat").innerHTML);
                     fd.append("lng", document.getElementById("lng").innerHTML);
                     fd.append("place_name", document.getElementById("place_name").innerHTML);
                     fd.append("date", document.getElementById("curdate").value);
                     fd.append("ratings", document.getElementById("rating").value);
+                    fd.append("user", document.getElementById("user").innerHTML);
                     
                         fetch("addImg_db.php",{
                             credentials: 'same-origin',
@@ -147,10 +158,21 @@ function saveImage(){
                         /*.then((resp)=>{return resp.text()}).then((json)=>{console.log(json)
                             window.location.href = "landingLogin.php";
                         });*/
-}}
 
-
-
+                var f2d = new FormData();
+                    f2d.append("place_name", document.getElementById("place_name").innerHTML);
+                    f2d.append("overall_rating", document.getElementById("rating").value);
+                    f2d.append("web_url", document.getElementById("web_url").innerHTML);
+                    
+                        fetch("addInfo_db.php",{
+                            credentials: 'same-origin',
+                            method:"POST",
+                            body:f2d
+                        })
+                        /*.then((resp)=>{return resp.text()}).then((json)=>{console.log(json)
+                            window.location.href = "landingLogin.php";
+                        });*/
+}
 
 
 

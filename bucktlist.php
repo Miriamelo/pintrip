@@ -69,7 +69,6 @@ FROM bucket_list WHERE user LIKE '$user%'");
         </div>
         <?php include 'navbar.php'; ?>
 
-        <script type="text/javascript" src="bucketlist.js"></script>
         
     </body>
 

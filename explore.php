@@ -49,7 +49,7 @@
                 <div class="card">  
                     <div id="thumbpic">
                         <img id="img" class="img-fluid" alt="photo" src="<?php echo $imageURL; ?>" alt="" />
-                        <div id="pictitle"><div id="addtobucket" onclick="addtobucket()"><img src="assets/addbucketlist-icon.svg"/></div><p id="placename"><?php echo $place; ?></p><p id="locationname">Vancouver, BC</p>
+                        <div id="pictitle"><div id="addtobucket"><img src="assets/addbucketlist-icon.svg"/></div><p id="placename"><?php echo $place; ?></p><p id="locationname">Vancouver, BC</p>
                         <div id="ratings"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
                     </div>
               </div>

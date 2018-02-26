@@ -8,8 +8,6 @@ header("Access-Control-Allow-Origin: *");
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $dblogin, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-            $sql = "SELECT * FROM photo";
             
             $photo = $_POST['photo'];
             $lat = $_POST['lat'];
@@ -17,17 +15,35 @@ header("Access-Control-Allow-Origin: *");
             $place_name = $_POST['place_name'];
             $date = $_POST['date'];
             $ratings = $_POST['ratings'];
+            $uid = $_POST['uid'];
           
-         echo $sql;
-         
-            $conn->exec($sql);
+            $sql = "SELECT lat, lng FROM photo WHERE user = '1'";
+        
+            $query = $conn->prepare($sql);
+            $query->execute();
+            $users = $query->fetchAll();
             
-
-
+            foreach($users as $user){
+                
+                $myObj->lat = $user["lat"];
+                $myObj->lng = $user["lng"];
+                
+                $myJSON = json_encode($myObj);
+                
+                echo $myJSON;
+                                
+                
+                
+                //$uarray[] = $user;
+                //echo $user["lat"];
+                //echo ", ";
+                //echo $user["lng"];
+                //echo '</br>';
+            }
+            print_r($uarray);
+            
     } catch(PDOException $e) {
         $error = $e->getMessage();
         echo "<p style='color: red;'>$error</p>";
     }
-  
-        
 ?>
