@@ -1,23 +1,21 @@
 <?php
-/*require_once('database_init.php');
+    session_start();
+	include_once 'database_init.php';
 
-session_start();
     $_SESSION['user'] = array();
-    $_SESSION['user']['session_ID'] = session_id();
-    $_SESSION['user']['first_name'] = $_POST['first_name'];
-    $_SESSION['user']['last_name'] = $_POST['last_name'];
     
-   $g_email = $_SESSION['user']['email'];
+    $oauth_uid = $_SESSION['user']['oauth_uid'];
     
-    $sql = "SELECT id FROM login WHERE email = '$g_email'";
+    $sql = "SELECT user_id FROM Users WHERE oauth_uid = '$oauth_uid'";
     $result = $conn->query($sql);
     $arr = $result->fetchAll();
-    $_SESSION['user']['id'] = $arr[0]['id'];
+
+    $_SESSION['user']['oauth_uid'] = $arr[0]['oauth_uid'];
   
-//var_dump($_SESSION);
-       if($_POST['type'] == "log"){
-            echo json_encode($user);
-            exit;
-        }*/
+    var_dump($_SESSION);
+//       if($_POST['type'] == "log"){
+//            echo json_encode($user);
+//            exit;
+//        }
     
 ?>
