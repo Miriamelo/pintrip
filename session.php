@@ -1,9 +1,9 @@
 <?php
-require_once('database_init.php');
+/*require_once('database_init.php');
 
 session_start();
     $_SESSION['user'] = array();
-    $_SESSION['user']['email'] = $_POST['email'];
+    $_SESSION['user']['session_ID'] = session_id();
     $_SESSION['user']['first_name'] = $_POST['first_name'];
     $_SESSION['user']['last_name'] = $_POST['last_name'];
     
@@ -18,6 +18,6 @@ session_start();
        if($_POST['type'] == "log"){
             echo json_encode($user);
             exit;
-        }
+        }*/
     
 ?>

@@ -33,7 +33,13 @@ session_start();
         <div class="row">
             <div class="col-sm-4 text-center name-div">
                 <img id="profilePic" alt="profile pic"/>
-                <p>Name: <span id="myName"></span></p>
+                <p>Name: 
+                    <?php echo $_SESSION['user']['name'];?>
+                    <span id="myName"></span>
+                </p>
+                <p>Email: 
+                    <?php echo $_SESSION['user']['email'];?>
+                </p>
             </div>
             <div class="col-sm-8"></div>
         </div>
@@ -50,15 +56,7 @@ session_start();
         </div>
     </div>  
       
-    <footer class="footer">
-            <div class="container">
-              <a href="index.html"><img src="assets/home-icon-blue.svg" class='barImg'/>  </a> 
-              <img src="assets/bucketlist-icon.svg" class='barImg'/>
-              <img src="assets/add-icon.svg" class='barImg' id='submit'/>
-              <a href="explore.php"><img src="assets/explore-icon.svg" class='barImg'/></a>
-              <img src="assets/user-icon.svg" class='barImg'/>
-                </div>
-        </footer>      
+      <?php include 'navbar.php'; ?>   
       
     <!-- Optional JavaScript -->
     <script src="js/fb-login.js"></script>  
