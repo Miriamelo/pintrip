@@ -19,11 +19,14 @@ session_start();
     
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/landing.css">
+      
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
     <title>PinTrip</title>
   </head>
   <body>
-      <div id="landing">
+    <div id="landing">
         <nav>
           <a class="navbar-brand" href="http://pintrip.taliawalkey.ca">
             <img src="assets/pintrip-logo-horizontal.png" alt="PinTrip" class="logo-horizontal">
@@ -31,7 +34,7 @@ session_start();
         </nav>
         
         <div class="row">
-            <div class="col-md-5 landing-text">
+            <div class="col-sm-6 col-md-5 landing-text">
                 <h1>Introducing PinTrip</h1>
                 <p>An easy way to keep track of the places you've travelled.
                 <br/>
@@ -41,38 +44,18 @@ session_start();
                 START NOW
                 </button>
             </div>
-            <div class="col-md-5">
+            <div class="col-sm-5 col-md-5">
                 <img src="assets/phone-mockup.png" class="mockup">
             </div>
         </div>
         
         <p class="footer text-center">Alynna Alcira | Miria Huber | Talia Walkey</p>
-    </div>  
-      
-    <div id="fb-root"></div> 
-    <div id="background">
-        <div class="row">
-            <div class="col-sm-4 text-center logo-div">
-                    <img src="assets/PinTrip_Logo_White.svg" alt="Pin Trip Logo" class="logo img-responsive"/>
-            </div>
-            <div class="col-sm-8"></div>
-        </div>
         
-        <div id="status"></div>
-        <div id="response"></div>
-        
-        <div class="row login-div">
-            <div class="col-sm-12 text-center">
-                <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="false"
-                data-scope="public_profile, email" onlogin="checkLoginState();"     
-                >
-                </div>
-            </div>
-        </div>
     </div>  
       
     <!-- Optional JavaScript -->
     <script src="js/fb-login.js"></script>  
+    <script src="js/landing.js"></script>  
       
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

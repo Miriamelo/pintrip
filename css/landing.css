@@ -1,0 +1,92 @@
+/* MEDIA QUERIES */
+@media only screen and (max-width: 800px) {
+    .mockup {
+        width: 300px !important;
+        height: auto;
+    }
+    .landing-text {
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #landing {
+        display: none;
+    }
+    .mockup {
+        width: 300px !important;
+        height: auto;
+    }
+    .landing-text {
+        margin-left: 10px;
+    }
+}
+
+/* STYLING */
+body {
+    overflow: hidden;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#landing {
+    background-image: url(../assets/gradient-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width:100vw;
+}
+
+.logo-horizontal {
+    width:250px;
+    height: auto;
+    padding: 30px;
+    padding-left: 50px;
+}
+
+.mockup {
+    width: 500px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.landing-text {
+    color: white;
+    margin: auto;
+    width: 200px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.landing-text h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.landing-text p {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.btn-landing {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #ff3366;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.btn-landing:hover {
+    background-color: #ff719a;
+}
+
+.footer {
+    font-size: 10pt;
+    bottom: 0;
+    position: absolute;
+    margin: 30px;
+    text-align: center;
+}
+
