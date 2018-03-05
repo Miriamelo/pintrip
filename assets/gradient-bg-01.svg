@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1242 2208"><defs><style>.cls-1{fill:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="622" y1="2209" x2="622" y2="-1" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#02e7c0"/><stop offset="0.31" stop-color="#1adccb"/><stop offset="1" stop-color="#4bc6e2"/></linearGradient></defs><title>gradient-bg</title><g id="LOGIN"><rect id="Background" class="cls-1" y="-1" width="1244" height="2210"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Background_1_);}
+</style>
+<title>gradient-bg</title>
+<g id="LOGIN">
+	
+		<linearGradient id="Background_1_" gradientUnits="userSpaceOnUse" x1="680.1194" y1="-12" x2="680.1194" y2="780" gradientTransform="matrix(1 0 0 -1 0 768)">
+		<stop  offset="0" style="stop-color:#02E7C0"/>
+		<stop  offset="0.31" style="stop-color:#1ADCCB"/>
+		<stop  offset="1" style="stop-color:#4BC6E2"/>
+	</linearGradient>
+	<rect id="Background" x="-6.9" y="-12" class="st0" width="1374" height="792"/>
+</g>
+</svg>
